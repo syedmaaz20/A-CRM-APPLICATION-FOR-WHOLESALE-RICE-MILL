@@ -1,2 +1,4 @@
 # A-CRM-APPLICATION-FOR-WHOLESALE-RICE-MILL
 A CRM APPLICATION FOR WHOLESALE RICE MILL
+# MY RICE App
+![image](https://github.com/user-attachments/assets/f93085a7-8331-4391-bef9-d1ae306dac28)
