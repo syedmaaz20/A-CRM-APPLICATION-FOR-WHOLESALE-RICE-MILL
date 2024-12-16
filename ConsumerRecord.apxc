@@ -1,6 +1,6 @@
 //Creating an Apex Class(ConsumerRecord)
 
-class ConsumerRecord {
+public class ConsumerRecord {
     public static void sendEmailNotification (List<consumer__c> con){
         for(consumer__c c:con)
         {
@@ -8,7 +8,7 @@ class ConsumerRecord {
                 email.setToAddresses( new List<String>{c.email__c});
                 email.setSubject('Welcome to our company');
                 email.setPlainTextBody('Dear '  + ' '+ ',\n\nWelcome to MY RICE!'+'You have been seen as a valuable customer to us. PLease continue your journey with us, while we try to provide you with good quality resources.'+'\n'+
-                                           "We are proud to associate with valuable customers like you and we look forward to collaborating with you by providing more and more exciting discounts or even product offers too.' + '\n'
+                                           'We are proud to associate with valuable customers like you and we look forward to collaborating with you by providing more and more exciting discounts or even product offers too.' + '\n'
                                            +'So why taking a step back, take a leap of faith and shop with us more, while we provide with the valuable products and offers'+'\n'+'\n'+'\n'+
                                            'Thankyou for buying '+ '' +'Here are some of the products that are brought by the customers who similarly bought products like this'+'\n\n');
                 Messaging.sendEmail(new List<Messaging.SingleEmailMessage>{email});
